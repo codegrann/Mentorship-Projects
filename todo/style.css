@@ -10,7 +10,7 @@ body{
    border: 2px solid red;
    display: flex;
    justify-content: center;
-   align-items: center;
+   /* align-items: center; */
 
 }
 #taskManager{
@@ -18,5 +18,12 @@ body{
     max-width: 500px;
     height: 20%;
     background-color: #da0f0f;
-    /* margin:5% auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.taskText{
+    width: 340px;
+    height: 30px;
+    background-color: blue;
 }
