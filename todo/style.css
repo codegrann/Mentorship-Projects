@@ -15,7 +15,7 @@ body{
 }
 #taskManager{
     width: 500px;
-    max-width: 500px;
+    /* max-width: 500px; */
     min-height: 20%;
     background-color: #da0f0f;
     display: flex;
@@ -26,6 +26,7 @@ body{
 
 .taskText{
     width: 340px;
-    height: 30px;
+    height: 40px;
     background-color: blue;
+    border: none;
 }
