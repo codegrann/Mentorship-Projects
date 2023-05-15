@@ -30,3 +30,13 @@ body{
     background-color: blue;
     border: none;
 }
+#addBtn{
+    padding: 0.5rem;
+    background-color: green;
+    border: none;
+}
+.remove{
+    background-color: purple;
+    border: none;
+    padding: 0.5rem 0.7rem;
+}
