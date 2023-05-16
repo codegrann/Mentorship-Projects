@@ -9,7 +9,7 @@
     ## Quiz App: 
     Develop a quiz application that presents a series of questions to the user and provides instant feedback on their answers. Include features like multiple-choice questions, a timer, and a scoring system.
 
-    R## ecipe Finder: 
+    ##Recipe Finder: 
     Create an app that allows users to search for recipes based on ingredients or specific dietary preferences. Retrieve recipe data from an API and display results with relevant details.
 
     ## Budget Tracker: 
