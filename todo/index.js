@@ -15,6 +15,7 @@ function addTask() {
         <div class="taskEach">
           <input type="text" class="task taskText" value="${input.value}" readonly>
           <button class="remove button">&times;</button>
+          <button class="button edit">edit</button>
         </div> 
         `;
         input.value="";
@@ -23,6 +24,7 @@ function addTask() {
         deleteButtons[i].onclick=function(){
             deleteButtons[i].parentNode.remove();
         }
+        document.querrySelectorAll(".edit")[i].style.color="red";
     }
        
     }
