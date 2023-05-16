@@ -15,16 +15,18 @@ function addTask() {
         <div class="taskEach">
           <input type="text" class="task taskText" value="${input.value}" readonly>
           <button class="remove button">&times;</button>
+          <button class="button edit">edit</button>
         </div> 
         `;
-        input.value="";
-    let deleteButtons=document.querySelectorAll(".remove");
-    for(let i=0; i<deleteButtons.length; i++)    {
-        deleteButtons[i].onclick=function(){
-            deleteButtons[i].parentNode.remove();
+        input.value = "";
+        let deleteButtons = document.querySelectorAll(".remove");
+        for (let i = 0; i < deleteButtons.length; i++) {
+            deleteButtons[i].onclick = function () {
+                deleteButtons[i].parentNode.remove();
+
+            }
         }
-    }
-       
+
     }
 }
 
