@@ -20,9 +20,12 @@ function addTask() {
         `;
         input.value="";
     let deleteButtons=document.querySelectorAll(".remove");
-    for(let i=0; i<deleteButtons.length; i++)    {
+    // let taskEach=document.querySelectorAll(".taskEach");
+    for(let i=0; i<deleteButtons.length && i<taskEach.length; i++)    {
         deleteButtons[i].onclick=function(){
-            deleteButtons[i].parentNode.remove();
+            // deleteButtons[i].parentNode.remove();
+            // taskEach[i].remove();
+
         }
         document.querrySelectorAll(".edit")[i].style.color="red";
     }
