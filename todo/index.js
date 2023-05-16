@@ -19,7 +19,6 @@ function addTask() {
         </div> 
         `;
         input.value = "";
-
         let deleteButtons = document.querySelectorAll(".remove");
         for (let i = 0; i < deleteButtons.length; i++) {
             deleteButtons[i].onclick = function () {
