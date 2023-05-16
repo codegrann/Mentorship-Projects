@@ -17,7 +17,12 @@ function addTask() {
           <button class="remove button">&times;</button>
         </div> 
         `;
-
+    let deleteButtons=document.querySelectorAll(".remove");
+    for(let i=0; i<deleteButtons.length; i++)    {
+        deleteButtons[i].onclick=function(){
+            deleteButtons[i].parentNode.remove();
+        }
+    }
        
     }
 }
