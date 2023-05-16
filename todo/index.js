@@ -18,18 +18,16 @@ function addTask() {
           <button class="button edit">edit</button>
         </div> 
         `;
-        input.value="";
-    let deleteButtons=document.querySelectorAll(".remove");
-    // let taskEach=document.querySelectorAll(".taskEach");
-    for(let i=0; i<deleteButtons.length && i<taskEach.length; i++)    {
-        deleteButtons[i].onclick=function(){
-            // deleteButtons[i].parentNode.remove();
-            // taskEach[i].remove();
+        input.value = "";
 
+        let deleteButtons = document.querySelectorAll(".remove");
+        for (let i = 0; i < deleteButtons.length; i++) {
+            deleteButtons[i].onclick = function () {
+                deleteButtons[i].parentNode.remove();
+
+            }
         }
-        document.querrySelectorAll(".edit")[i].style.color="red";
-    }
-       
+
     }
 }
 
