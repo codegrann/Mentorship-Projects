@@ -43,3 +43,6 @@ body{
 .button{
     cursor: pointer;
 }
+.taskEach{
+    margin-bottom: 0.9rem;
+}
