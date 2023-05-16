@@ -33,6 +33,8 @@ body{
     background-color: rgb(203, 203, 225);
     border: none;
     border-radius: 0.2rem;
+    font-size: 1.2rem;
+    /* text-transform: capitalize; */
 }
 #addBtn{
     padding: 0.5rem;
