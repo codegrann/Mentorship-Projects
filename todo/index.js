@@ -19,9 +19,17 @@ function addTask() {
         </div> 
         `;
         input.value = "";
+
+        let editButtons=document.querySelectorAll("edit");
+        for(let j=0; j<editButtons.length; j++){
+            editButtons[j].onclick=function(){
+
+            }
+        }
+
         let deleteButtons = document.querySelectorAll(".remove");
         for (let i = 0; i < deleteButtons.length; i++) {
-            deleteButtons[i].onclick = function () {
+            deleteButtons[i].onclick = () => {
                 deleteButtons[i].parentNode.remove();
 
             }
