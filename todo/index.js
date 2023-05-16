@@ -14,8 +14,8 @@ function addTask() {
         tasks.innerHTML += `
         <div class="taskEach">
           <input type="text" class="task taskText" value="${input.value}" readonly>
-          <button class="remove button">&times;</button>
           <button class="button edit">edit</button>
+          <button class="remove button">&times;</button>
         </div> 
         `;
         input.value = "";
