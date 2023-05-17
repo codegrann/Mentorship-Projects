@@ -11,14 +11,21 @@ function addTask() {
         alert("Please enter title of a task to continue.")
     }
     else {
-        let date=prompt("Enter due date");
-        let today=new Date();
+        let enterDate = prompt("Enter due date");
+        let userDate = new Date(enterDate)
+        let today = new Date();
+        let daysLeft = userDate.getDate() - today.getDate();
+        if(daysLeft<0){
+            daysLeft=0;
+        }
+        
         tasks.innerHTML += `
         <div class="taskEach">
           <input type="text" class="task taskText" value="${input.value}" readonly>
           <button class="button edit">edit</button>
           <button class="remove button">&times;</button>
-          <p>${date.getDay() - today.getDay()} days left</p>
+          
+          <p>${daysLeft} days left</p>
         </div> 
         `;
         input.value = "";
@@ -36,14 +43,13 @@ function addTask() {
         // DELETING A TASK
 
         let deleteButtons = document.querySelectorAll(".remove");
-        deleteButtons.forEach((deleteButton)=>
-            {
-                deleteButton.onclick = () => {
-                    deleteButton.parentNode.remove();
-    
-                }
+        deleteButtons.forEach((deleteButton) => {
+            deleteButton.onclick = () => {
+                deleteButton.parentNode.remove();
+
             }
-        ) 
+        }
+        )
 
     }
 }
