@@ -20,11 +20,14 @@ function addTask() {
         `;
         input.value = "";
 
-        let editButtons=document.querySelectorAll("edit");
-        for(let j=0; j<editButtons.length; j++){
-            editButtons[j].onclick=function(){
-
-            }
+        let taskEach=document.querySelectorAll(".taskEach")
+        let editButtons = document.querySelectorAll(".edit");
+        for (let j = 0; j < editButtons.length; j++) {
+            editButtons[j].onclick = function () {
+                ;
+                input.value = editButtons[j].previousElementSibling.value;
+                // editButtons[j].parentNode.remove();
+                editButtons[j].previousElementSibling.value=input.value;
         }
 
         let deleteButtons = document.querySelectorAll(".remove");
@@ -38,4 +41,4 @@ function addTask() {
     }
 }
 
-
+}
