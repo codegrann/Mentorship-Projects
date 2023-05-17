@@ -20,25 +20,25 @@ function addTask() {
         `;
         input.value = "";
 
-        let taskEach=document.querySelectorAll(".taskEach")
+        // let taskEach = document.querySelectorAll(".taskEach")
         let editButtons = document.querySelectorAll(".edit");
-        for (let j = 0; j < editButtons.length; j++) {
-            editButtons[j].onclick = function () {
-                ;
-                input.value = editButtons[j].previousElementSibling.value;
-                // editButtons[j].parentNode.remove();
-                editButtons[j].previousElementSibling.value=input.value;
-        }
+        editButtons.forEach((editButton) => {
+            editButton.onclick = function () {
+                input.value = editButton.previousElementSibling.value;
+                // editButton.parentNode.remove();
+            }
+        })
 
         let deleteButtons = document.querySelectorAll(".remove");
-        for (let i = 0; i < deleteButtons.length; i++) {
-            deleteButtons[i].onclick = () => {
-                deleteButtons[i].parentNode.remove();
-
+        deleteButtons.forEach((deleteButton)=>
+            {
+                deleteButton.onclick = () => {
+                    deleteButton.parentNode.remove();
+    
+                }
             }
-        }
+        ) 
 
     }
 }
 
-}
