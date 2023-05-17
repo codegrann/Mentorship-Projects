@@ -8,24 +8,24 @@ function addTask() {
 
 
     if (input.value.length == 0) {
-        alert("Please enter title of a task to continue.")
+        alert("Please enter title of your task to continue.")
     }
     else {
-        let enterDate = prompt("Enter due date");
+        let enterDate = prompt("Enter due date: yyyy-mm-dd");
         let userDate = new Date(enterDate)
         let today = new Date();
-        let daysLeft = userDate.getDate() - today.getDate();
+        let daysLeft = (userDate - today)/(24*60*60*1000);
         if(daysLeft<0){
             daysLeft=0;
         }
-        
+
         tasks.innerHTML += `
         <div class="taskEach">
           <input type="text" class="task taskText" value="${input.value}" readonly>
           <button class="button edit">edit</button>
           <button class="remove button">&times;</button>
           
-          <p>${daysLeft} days left</p>
+          <p>${Math.ceil(daysLeft)} days left</p>
         </div> 
         `;
         input.value = "";
