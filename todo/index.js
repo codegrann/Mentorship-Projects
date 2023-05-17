@@ -20,7 +20,8 @@ function addTask() {
         `;
         input.value = "";
 
-        // let taskEach = document.querySelectorAll(".taskEach")
+        // EDITING A TASK
+
         let editButtons = document.querySelectorAll(".edit");
         editButtons.forEach((editButton) => {
             editButton.onclick = function () {
@@ -28,6 +29,8 @@ function addTask() {
                 // editButton.parentNode.remove();
             }
         })
+
+        // DELETING A TASK
 
         let deleteButtons = document.querySelectorAll(".remove");
         deleteButtons.forEach((deleteButton)=>
