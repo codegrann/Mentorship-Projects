@@ -14,7 +14,7 @@ body{
 
 }
 #taskManager{
-    width: 500px;
+    /* min-width: 500px; */
     /* max-width: 500px; */
     min-height: 20%;
     background-color: #c474b7;
@@ -24,6 +24,8 @@ body{
     gap: 1rem;
     margin-top: 4%;
     padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
     border-radius: 0.3rem;
 }
 
@@ -45,15 +47,18 @@ body{
     background-color: rgb(228, 72, 57);
     border: none;
     font-size: 1.5rem;
-    padding: 0.3rem 0.5rem;
+    /* height: 2.5%; */
+    padding: 0.1rem 0.5rem;
 }
 .button{
     cursor: pointer;
     border-radius: 0.2rem;
     border: none;
+    height: 5vh;
 }
 .taskEach{
     margin-bottom: 0.9rem;
     display: flex;
     gap: 0.75rem;
+    align-items: center;
 }
