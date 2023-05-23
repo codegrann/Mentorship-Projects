@@ -22,6 +22,7 @@ function addTask() {
          // Update the task container with tasks being added
         tasks.innerHTML += `
         <div class="taskEach">
+        <input type="checkbox" class="check">
           <input type="text" class="task taskText" value="${input.value}" readonly>
           <button class="button edit">edit</button>
           <button class="remove button">&times;</button>
